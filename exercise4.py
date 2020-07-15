@@ -12,9 +12,10 @@ def hex_output():
 def oct_output():
     decnum = 0
     octnum = input('Enter a number in octal: ')
+    print('\n')
     for power, digit in enumerate(reversed(octnum)):
         print(f' The power is {power} and digit is {digit}')
-        octnum += int(digit, 8) * (8 ** power)
+        decnum += int(digit, 8) * (8 ** power)
     print(decnum)
 
 hex_output()
